@@ -1,0 +1,294 @@
+@font-face {
+    font-family: "Baskerville";
+    src: url("Content/Baskerville.ttf") format('truetype');
+}
+@font-face {
+    font-family: "Gabriola";
+    src: url("Content/Gabriola.ttf") format('truetype')
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, #050107 0%, #110415 30%);
+    background-size: 100% 100%;
+    background-position: bottom; 
+    background-repeat: no-repeat;
+    background-attachment: fixed
+}
+
+.bg {
+    background-image: url(Content/DOODLES.png);
+    background-repeat: repeat;
+    background-size: auto;
+    object-fit: cover;
+    height: 999999999px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 1; 
+    overflow: hidden
+}
+
+.profile {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start
+}
+
+.profile-content {
+    display: flex;
+    align-items: center;
+    margin-top: 5px
+}
+
+.header {
+    width: 100%;
+    height: 360px;
+    object-fit: cover
+}
+
+.avatar {
+    position: absolute;
+    width: 160px;
+    left: 50%;
+    top: 80%;
+    border-radius: 5%;
+    border: 4.5px solid #0b0310;
+    transform: translate(-50%, -20%)
+}
+
+.text {
+    font-size: 24px;
+    font-family: "Baskerville";
+    font-weight: 630;
+    color: #5200a4;
+    letter-spacing: 1px;
+    background-color:#050107;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    border-radius: 8px;
+    border: 4px solid #050107;
+    box-shadow: 0px 4px 15px #05010795;
+    text-align: center;
+    transform: translate(-50%, 20%);
+    width: auto;
+    padding: 0.4px 28px;
+    text-shadow: 0 0 5px #5200a4
+}
+
+.text-autism {
+    font-family: 'Gabriola';
+    font-size: 42px;
+    font-weight: 800;
+    border: 2px solid #050107;
+}
+
+.text-fuck {
+    font-family: 'Gabriola';
+    font-weight: 800
+}
+
+.text-number {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 630;
+    font-size: 28px
+}
+
+.text-triangle {
+font-size: 36px;
+letter-spacing: 10px
+}
+
+.text-yolo {
+font-family: 'Times New Roman', Times, serif
+}
+
+.maquena {
+    font-size: 50px;
+    font-family: "Baskerville";
+    font-weight: 480;
+    color: #990ad5;
+    letter-spacing: 7px;
+    position: absolute;
+    left: 50%;
+    top: 102%;
+    text-align: center;
+    transform: translate(-50%, 20%)
+}
+
+.links-container {
+    display: flex;
+    align-items: center
+}
+
+.linksbar{
+    display: flex;
+    align-items: center;
+    gap: 90px
+}
+
+.linksbar img {
+    width: 45px
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 768px) {
+
+.bg {
+    background-image: url("Content/DOODLESMOBILELOWOPACITY.png");
+    background-repeat: repeat;
+    background-size: auto;
+    object-fit: cover;
+    justify-content: center;
+    display: flex;
+    top: 0;
+    height: 999999999999999999999999999999999999999999999999px; /* background n funciona de jeito nenhum kkkkkk olha a gambiarra porra */
+    width: 100vw;
+    opacity: 1.5%;
+    position: absolute
+}
+
+.profile {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start
+}
+
+.profile-content {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.header {
+    width: 100%;
+    height: 170px;
+    object-fit: cover
+}
+
+.avatar {
+    position: absolute;
+    width: 128px;
+    left: 50%;
+    top: 40%;
+    border-radius: 5%;
+    border: 4.5px solid #050107;
+    transform: translate(-50%, -20%)
+}
+
+.text {
+    font-size: 12px;
+    font-family: "Baskerville";
+    font-weight: 630;
+    color: #5200a4;
+    letter-spacing: 0.5px;
+    background-color:#050107;
+    position: absolute;
+    left: 50%;
+    top: 6%;
+    border-radius: 6px;
+    border: 4px solid #050107;
+    box-shadow: 0px 4px 15px #05010795;
+    text-align: center;
+    transform: translate(-50%, 20%);
+    width: auto;
+    padding: 0.4px 28px;
+    text-shadow: 0 0 5px #5200a4
+}
+
+.text-number {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 630
+}
+
+.maquena {
+    font-size: 32px;
+    font-family: "Baskerville";
+    font-weight: 480;
+    color: #990ad5;
+    letter-spacing: 7px;
+    position: absolute;
+    left: 50%;
+    top: 62%;
+    text-align: center;
+    transform: translate(-50%, 20%)
+}
+
+.links-container {
+    display: flex;
+    align-items: center
+}
+
+.linksbar{
+    display: flex;
+    align-items: center;
+    gap: 150px
+}
+
+.linksbar img {
+    width: 30px
+}
+
+
+}
+
+@media only screen and (min-width: 1442px) and (min-height: 902px) {
+
+.text {
+    font-size: 30px;
+    font-family: "Baskerville";
+    font-weight: 630;
+    color: #5200a4;
+    letter-spacing: 1px;
+    background-color:#050107;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    border-radius: 8px;
+    border: 4px solid #050107;
+    box-shadow: 0px 4px 15px #05010795;
+    text-align: center;
+    transform: translate(-50%, 20%);
+    width: auto;
+    padding: 0.4px 28px;
+    text-shadow: 0 0 5px #5200a4
+}
+
+}
+
+@media only screen and (min-width: 1922px) and (min-height: 1082px) {
+
+.text {
+    font-size: 46px;
+    font-family: "Baskerville";
+    font-weight: 630;
+    color: #5200a4;
+    letter-spacing: 1px;
+    background-color:#050107;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    border-radius: 8px;
+    border: 4px solid #050107;
+    box-shadow: 0px 4px 15px #05010795;
+    text-align: center;
+    transform: translate(-50%, 20%);
+    width: auto;
+    padding: 0.4px 28px;
+    text-shadow: 0 0 5px #5200a4
+}
+    
+    }
